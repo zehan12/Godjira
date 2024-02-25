@@ -2,10 +2,13 @@
   "name": "godjira",
   "version": "0.1.0",
   "private": true,
+  "main": "./main/main.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "desktop:dev": "concurrently -n \"NEXT,ELECTRON\" -c \"yellow,blue\" --kill-others \"next dev\" \"electron .\"",
+    "desktop:build": "next build && electron-builder",
     "lint": "next lint",
     "test": "jest --coverage",
     "test:watch": "jest --watchAll"
