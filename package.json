@@ -9,9 +9,12 @@
     "start": "next start",
     "desktop:dev": "concurrently -n \"NEXT,ELECTRON\" -c \"yellow,blue\" --kill-others \"next dev\" \"electron .\"",
     "desktop:build": "next build && electron-builder",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,md,mdx,css,yaml,yml}\"",
+    "check": "prettier --check \"**/*.{ts,tsx,js,jsx,md,mdx,css,yaml,yml}\"",
     "lint": "next lint",
     "test": "jest --coverage",
-    "test:watch": "jest --watchAll"
+    "test:watch": "jest --watchAll",
+    "prepare": "husky"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^6.4.2",
@@ -35,6 +38,7 @@
     "electron-builder": "24.12.0",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
+    "husky": "^9.0.11",
     "postcss": "^8",
     "prettier": "^3.2.5",
     "tailwindcss": "^3.3.0",
