@@ -2,7 +2,7 @@
   "name": "godjira",
   "version": "0.1.0",
   "private": true,
-  "main": "./desktop/main.js",
+  "main": "./desktop-electron-app/main.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
