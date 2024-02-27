@@ -3,6 +3,7 @@
   "tabWidth": 2,
   "printWidth": 100,
   "singleQuote": true,
+  "endOfLine": "auto",
   "trailingComma": "none",
   "importOrder": [
     "<THIRD_PARTY_MODULES>",
