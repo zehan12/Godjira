@@ -17,9 +17,18 @@
     "test:ci": "jest --ci",
     "test:watch": "jest --watchAll",
     "prepare": "husky",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "prisma:migrate-dev": "prisma migrate dev",
+    "prisma:studio": "prisma studio",
+    "prisma:tidy": "prisma format",
+    "prisma:generate": "prisma generate",
+    "prisma:seed": "prisma db seed"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
   },
   "dependencies": {
+    "@prisma/client": "^5.10.2",
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.2.1",
     "@testing-library/user-event": "^14.5.2",
@@ -52,7 +61,9 @@
     "postcss": "^8",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "0.5.11",
+    "prisma": "^5.10.2",
     "tailwindcss": "^3.3.0",
+    "ts-node": "^10.9.2",
     "typescript": "^5"
   },
   "lint-staged": {
