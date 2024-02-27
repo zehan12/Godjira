@@ -1,12 +1,13 @@
-import { describe, expect, test } from "@jest/globals";
-import { render, screen } from "@testing-library/react";
-import { Button } from "./index";
+import { describe, expect, test } from '@jest/globals';
+import { render, screen } from '@testing-library/react';
 
-describe("Button Tests", () => {
-    test("should render button", () => {
-        render(<Button onClick={() => { }}>Click me</Button>);
+import { Button } from './index';
 
-        const element = screen.getByTestId("button");
-        expect(element).toBeTruthy();
-    });
+describe('Button Tests', () => {
+  test('should render button', () => {
+    render(<Button onClick={() => {}}>Click me</Button>);
+
+    const element = screen.getByTestId('button');
+    expect(element).toBeTruthy();
+  });
 });

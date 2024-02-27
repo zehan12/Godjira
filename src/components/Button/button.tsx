@@ -1,10 +1,15 @@
-import React from "react";
+import React from 'react';
+
 interface buttonProps {
-    onClick: () => void;
-};
+  onClick: () => void;
+  children: React.ReactNode;
+}
 
 export const Button = (props: buttonProps) => {
-    const { onClick } = props;
-    return (<button data-testid="button" onClick={onClick}>
-    </button>)
-}
+  const { onClick, children } = props;
+  return (
+    <button type="button" data-testid="button" onClick={onClick}>
+      {children}
+    </button>
+  );
+};
