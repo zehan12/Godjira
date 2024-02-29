@@ -28,8 +28,8 @@
     "plugin:jsx-a11y/recommended",
     "plugin:prettier/recommended"
   ],
+  "plugins": ["simple-import-sort"],
   "ignorePatterns": ["**/*.css"],
-  "plugins": ["simple-import-sort", "@trivago/prettier-plugin-sort-imports"],
   "rules": {
     "prettier/prettier": ["error", {}, { "usePrettierrc": true }],
     "react/prop-types": "off",
@@ -39,8 +39,9 @@
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "react/no-unescaped-entities": "off",
-    "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error",
+    "simple-import-sort/exports": "off",
+    "simple-import-sort/imports": "off",
+    "simple-import-sort/sort": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-namespace": "off"
   },
