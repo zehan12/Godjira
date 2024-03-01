@@ -7,6 +7,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "kill": "pkill -f node",
     "desktop:dev": "concurrently -n \"NEXT,ELECTRON\" -c \"yellow,blue\" --kill-others \"next dev\" \"electron .\"",
     "desktop:build": "next build && electron-builder",
     "eslint:format": "eslint src --fix",
@@ -45,6 +46,7 @@
     "react-dom": "^18",
     "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7",
+    "tailwind-variants": "^0.2.0",
     "ts-jest": "^29.1.2"
   },
   "devDependencies": {
