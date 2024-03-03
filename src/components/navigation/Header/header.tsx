@@ -1,6 +1,8 @@
 import React from 'react';
 import { tv } from 'tailwind-variants';
 
+import { siteConfig } from '../../../config/site-config';
+
 import { MainMenu } from '../main-menu';
 
 type HeaderProps = {
@@ -30,7 +32,7 @@ export const Header = ({
   return (
     <header className={NavbarStyles({ border, sticky })}>
       <nav className="container flex h-16 items-center justify-between">
-        <MainMenu />
+        <MainMenu items={siteConfig.mainNav} />
       </nav>
     </header>
   );
