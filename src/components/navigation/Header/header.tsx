@@ -3,7 +3,7 @@ import { tv } from 'tailwind-variants';
 
 import { siteConfig } from '../../../config/site-config';
 
-import { MainMenu } from '../main-menu';
+import { MainMenu } from '../MainMenu';
 
 type HeaderProps = {
   border?: boolean;
