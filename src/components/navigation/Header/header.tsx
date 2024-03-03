@@ -1,6 +1,8 @@
 import React from 'react';
 import { tv } from 'tailwind-variants';
 
+import { MainMenu } from '../main-menu';
+
 type HeaderProps = {
   border?: boolean;
   sticky?: boolean;
@@ -28,7 +30,7 @@ export const Header = ({
   return (
     <header className={NavbarStyles({ border, sticky })}>
       <nav className="container flex h-16 items-center justify-between">
-        <div>nav-bar</div>
+        <MainMenu />
       </nav>
     </header>
   );

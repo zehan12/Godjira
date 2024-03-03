@@ -4777,6 +4777,7 @@ __metadata:
     jest: "npm:^29.7.0"
     jest-environment-jsdom: "npm:^29.7.0"
     lint-staged: "npm:15.2.2"
+    lucide-react: "npm:^0.344.0"
     million: "npm:^2.6.0-beta.11"
     next: "npm:14.1.0"
     postcss: "npm:^8"
@@ -6430,6 +6431,15 @@ __metadata:
   dependencies:
     yallist: "npm:^4.0.0"
   checksum: 10c0/cb53e582785c48187d7a188d3379c181b5ca2a9c78d2bce3e7dee36f32761d1c42983da3fe12b55cb74e1779fa94cdc2e5367c028a9b35317184ede0c07a30a9
+  languageName: node
+  linkType: hard
+
+"lucide-react@npm:^0.344.0":
+  version: 0.344.0
+  resolution: "lucide-react@npm:0.344.0"
+  peerDependencies:
+    react: ^16.5.1 || ^17.0.0 || ^18.0.0
+  checksum: 10c0/f54c715459c190aab0fad8df2f76e06a6bf5be1b37d5d13f0ecfb2133dccda763b8b03b40463075fc93b2a754ad1b8d85adf3b880bf6da5f791dd17fcb788a37
   languageName: node
   linkType: hard
 
@@ -8527,15 +8537,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss-animate@npm:^1.0.7":
-  version: 1.0.7
-  resolution: "tailwindcss-animate@npm:1.0.7"
-  peerDependencies:
-    tailwindcss: "*"
-  checksum: 10c0/ec7dbd1631076b97d66a1fbaaa06e0725fccfa63119221e8d87a997b02dcede98ad88bb1ef6665b968f5d260fcefb10592e0299ca70208d365b37761edf5e19a
-  languageName: node
-  linkType: hard
-
 "tailwind-variants@npm:^0.2.0":
   version: 0.2.0
   resolution: "tailwind-variants@npm:0.2.0"
@@ -8544,6 +8545,15 @@ __metadata:
   peerDependencies:
     tailwindcss: "*"
   checksum: 10c0/2163ab679473110a0c3c2907af035db4cd1290ba508a1b57d31b30ac06a98ee318e84f67d041a38017e9997c9751cd6f0a1703ccdd92584792ecdade8d62ece9
+  languageName: node
+  linkType: hard
+
+"tailwindcss-animate@npm:^1.0.7":
+  version: 1.0.7
+  resolution: "tailwindcss-animate@npm:1.0.7"
+  peerDependencies:
+    tailwindcss: "*"
+  checksum: 10c0/ec7dbd1631076b97d66a1fbaaa06e0725fccfa63119221e8d87a997b02dcede98ad88bb1ef6665b968f5d260fcefb10592e0299ca70208d365b37761edf5e19a
   languageName: node
   linkType: hard
 
