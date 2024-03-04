@@ -1,7 +1,11 @@
+'use client';
+
 import React from 'react';
 import { tv } from 'tailwind-variants';
 
 import { dashboardConfig, siteConfig } from '../../../config/site-config';
+
+import { ThemeSwitch } from '@/components/shared/ThemeSwitch';
 
 import { MainMenu } from '../MainMenu';
 import { MobileMenu } from '../MobileMenu';
@@ -38,6 +42,9 @@ export const Header = ({
           MainMenuItems={siteConfig.mainNav}
           sidebarNavItems={dashboardConfig.sidebarNav}
         />
+        <div className="flex flex-1 items-center justify-end space-x-2">
+          <ThemeSwitch />
+        </div>
       </nav>
     </header>
   );

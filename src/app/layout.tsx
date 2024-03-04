@@ -1,9 +1,10 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { ThemeProvider } from 'next-themes';
 import { Inter } from 'next/font/google';
 
 import { Header } from '@/components/navigation/Header/index';
+
+import { NextThemesProvider } from '../providers/next-theme-provider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -19,17 +20,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Header />
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+      <NextThemesProvider>
+        <body className={inter.className}>
+          <Header />
           {children}
-        </ThemeProvider>
-      </body>
+        </body>
+      </NextThemesProvider>
     </html>
   );
 }
