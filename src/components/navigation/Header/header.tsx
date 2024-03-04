@@ -1,11 +1,15 @@
 'use client';
 
+import { Github } from 'lucide-react';
+import Link from 'next/link';
 import React from 'react';
 import { tv } from 'tailwind-variants';
 
 import { dashboardConfig, siteConfig } from '../../../config/site-config';
 
 import { ThemeSwitch } from '@/components/shared/ThemeSwitch';
+import { Button } from '@/components/ui/button';
+import { UserMenu } from '@/components/user/UserMenu';
 
 import { MainMenu } from '../MainMenu';
 import { MobileMenu } from '../MobileMenu';
@@ -44,6 +48,14 @@ export const Header = ({
         />
         <div className="flex flex-1 items-center justify-end space-x-2">
           <ThemeSwitch />
+          <div className="flex items-center justify-center gap-2">
+            <Button variant={'ghost'}>
+              <Link href={'https://github.com/zehan12/Godjira'}>
+                <Github />
+              </Link>
+            </Button>
+            <UserMenu />
+          </div>
         </div>
       </nav>
     </header>
