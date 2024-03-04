@@ -1,9 +1,10 @@
 import React from 'react';
 import { tv } from 'tailwind-variants';
 
-import { siteConfig } from '../../../config/site-config';
+import { dashboardConfig, siteConfig } from '../../../config/site-config';
 
 import { MainMenu } from '../MainMenu';
+import { MobileMenu } from '../MobileMenu';
 
 type HeaderProps = {
   border?: boolean;
@@ -33,6 +34,10 @@ export const Header = ({
     <header className={NavbarStyles({ border, sticky })}>
       <nav className="container flex h-16 items-center justify-between">
         <MainMenu items={siteConfig.mainNav} />
+        <MobileMenu
+          MainMenuItems={siteConfig.mainNav}
+          sidebarNavItems={dashboardConfig.sidebarNav}
+        />
       </nav>
     </header>
   );

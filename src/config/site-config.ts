@@ -24,7 +24,7 @@ const links = {
 };
 
 export const siteConfig = {
-  name: 'zehan',
+  name: 'Godjira',
   shortName: 'zk',
   author: 'zehan khan',
   description:
@@ -187,6 +187,47 @@ export const siteConfig = {
           external: true
         }
       ]
+    }
+  ]
+};
+
+export const dashboardConfig = {
+  sidebarNav: [
+    {
+      title: 'Stores',
+      href: '/dashboard/stores',
+      icon: 'store',
+      items: []
+    },
+    {
+      title: 'Billing',
+      href: '/dashboard/billing',
+      icon: 'billing',
+      items: []
+    },
+    {
+      title: 'Account',
+      href: '/dashboard/account',
+      icon: 'user',
+      items: []
+    },
+    {
+      title: 'Settings',
+      href: '/dashboard/settings',
+      icon: 'settings',
+      items: []
+    },
+    {
+      title: 'Purchases',
+      href: '/dashboard/purchases',
+      icon: 'dollarSign',
+      items: []
+    },
+    {
+      title: 'Admin Page',
+      href: '/dashboard/admin',
+      icon: 'terminal',
+      items: []
     }
   ]
 };
