@@ -3,6 +3,7 @@
 This project supports containerization using Docker for easy deployment and scalability. Follow the steps below to run the Next.js app in a Docker container.
 
 ### Prerequisites
+
 - [Docker](https://www.docker.com/get-started) installed
 
 ### Steps
@@ -28,7 +29,6 @@ Run the Docker container:
 
     Open your browser and navigate to http://localhost:3000 to view the Next.js app.
 
-
 ### Docker Compose (optional)
 
 If you prefer using Docker Compose for multi-container applications, you can use the provided docker-compose.yml file:
@@ -38,8 +38,6 @@ docker-compose up
 ```
 
 This will start the Next.js app and any required services defined in the docker-compose.yml file.
-
-
 
 ### **Dockerfile:**
 
@@ -72,14 +70,14 @@ CMD ["npm", "start"]
 
 If you are using Docker Compose, include a docker-compose.yml file.
 
-```yaml 
+```yaml
 version: '3'
 services:
   nextjs-app:
     build:
       context: .
     ports:
-      - "3000:3000"
+      - '3000:3000'
 ```
 
 ## Getting Started
@@ -88,6 +86,61 @@ First, run the development server:
 
 ```bash
 yarn dev
+```
+
+## API Documentation
+
+### Fetch Board API
+
+#### Endpoint
+
+```http
+GET /api/board/fetch?boardId={boardId}&skip={skip}&take={take}
+```
+
+#### Parameters
+
+    boardId (required): Unique identifier of the board to fetch.
+    skip (required): Number of tickets to skip for pagination.
+    take (required): Number of tickets to retrieve in a single API call.
+
+### Response
+
+```json
+{
+  "data": {
+    "board": {
+      "id": "clrut9vsz00072on8wswgup2l",
+      "type": "SPRINT",
+      "title": "Sprint Board January",
+      "description": "January Sprint items",
+      "startDate": "2024-01-26T15:42:04.341Z",
+      "endDate": "2024-02-02T15:42:04.341Z"
+    },
+    "boardColumns": [
+      {
+        "id": "clrut9xqp00092on8bxwjfrsu",
+        "position": 0,
+        "label": "TODO",
+        "boardId": "clrut9vsz00072on8wswgup2l"
+      }
+    ],
+    "boardTickets": [
+      {
+        "id": "clruta28h000g2on8jw94q7zs",
+        "title": "Fix home page",
+        "description": "Some description",
+        "assignedTo": "clrut9i3o00002on8w87bndm1",
+        "reportedBy": "clrut9k1800012on8rkunl31h",
+        "boardColumnId": "clrut9xqp00092on8bxwjfrsu",
+        "status": "TODO",
+        "boardId": "clrut9vsz00072on8wswgup2l",
+        "storyPoints": 5,
+        "position": 0
+      }
+    ]
+  }
+}
 ```
 
 ## Deploy on Vercel
