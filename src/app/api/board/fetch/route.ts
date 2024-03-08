@@ -53,7 +53,7 @@ export const GET = async (request: NextRequest) => {
   } catch (err: unknown) {
     return Response.json(
       {
-        error: { message: `Something went wrong!! ${err.message}` }
+        error: { message: 'Something went wrong!!' }
       },
       { status: 500 }
     );
