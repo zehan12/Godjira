@@ -2210,6 +2210,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/autoprefixer@npm:~10.2.0":
+  version: 10.2.0
+  resolution: "@types/autoprefixer@npm:10.2.0"
+  dependencies:
+    autoprefixer: "npm:*"
+  checksum: 10c0/13037ba569b75b21b765c4d1476867c7bc1bdf0bcf82fe0b15165034043891491ae3fc35bb94678bfcb379e00f6e5047244af79e835e32ccb00da56bd0ec56d0
+  languageName: node
+  linkType: hard
+
 "@types/babel__core@npm:^7.1.14":
   version: 7.20.5
   resolution: "@types/babel__core@npm:7.20.5"
@@ -2269,6 +2278,30 @@ __metadata:
   dependencies:
     "@types/ms": "npm:*"
   checksum: 10c0/5dcd465edbb5a7f226e9a5efd1f399c6172407ef5840686b73e3608ce135eeca54ae8037dcd9f16bdb2768ac74925b820a8b9ecc588a58ca09eca6acabe33e2f
+  languageName: node
+  linkType: hard
+
+"@types/eslint-config-prettier@npm:~6.11.3":
+  version: 6.11.3
+  resolution: "@types/eslint-config-prettier@npm:6.11.3"
+  checksum: 10c0/e49ef5b2cf9bfa173d678f50b392511e5567743a864552257978fcf98a876adcd41bb2fa074505ab4aae94862fb349eda2cf41aec698a4a1db77a2731b1fa1c6
+  languageName: node
+  linkType: hard
+
+"@types/eslint@npm:~8.56.5":
+  version: 8.56.5
+  resolution: "@types/eslint@npm:8.56.5"
+  dependencies:
+    "@types/estree": "npm:*"
+    "@types/json-schema": "npm:*"
+  checksum: 10c0/1d5d70ea107c63adfaf63020f85859c404f90c21ada2a655376b8e76109df354643797e30c7afc3b2de84797d9f5ce9f03f53a5d29a186706a44afd90f76597c
+  languageName: node
+  linkType: hard
+
+"@types/estree@npm:*":
+  version: 1.0.5
+  resolution: "@types/estree@npm:1.0.5"
+  checksum: 10c0/b3b0e334288ddb407c7b3357ca67dbee75ee22db242ca7c56fe27db4e1a31989cb8af48a84dd401deb787fe10cc6b2ab1ee82dc4783be87ededbe3d53c79c70d
   languageName: node
   linkType: hard
 
@@ -2333,7 +2366,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/json-schema@npm:^7.0.12":
+"@types/json-schema@npm:*, @types/json-schema@npm:^7.0.12":
   version: 7.0.15
   resolution: "@types/json-schema@npm:7.0.15"
   checksum: 10c0/a996a745e6c5d60292f36731dd41341339d4eeed8180bb09226e5c8d23759067692b1d88e5d91d72ee83dfc00d3aca8e7bd43ea120516c17922cbcb7c3e252db
@@ -2353,6 +2386,13 @@ __metadata:
   dependencies:
     "@types/node": "npm:*"
   checksum: 10c0/ff8f54fc49621210291f815fe5b15d809fd7d032941b3180743440bd507ecdf08b9e844625fa346af568c84bf34114eb378dcdc3e921a08ba1e2a08d7e3c809c
+  languageName: node
+  linkType: hard
+
+"@types/lint-staged@npm:~13.3.0":
+  version: 13.3.0
+  resolution: "@types/lint-staged@npm:13.3.0"
+  checksum: 10c0/b4da6c76bb93b546c5aa1ad98ad845ea9d10aec15df30d5e3b2567d0cc360c4be26b1af9e5ca32c956322da1be4b26dab02a1ec41b82dab2f4f75dc27b9b791b
   languageName: node
   linkType: hard
 
@@ -3124,6 +3164,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"autoprefixer@npm:*":
+  version: 10.4.18
+  resolution: "autoprefixer@npm:10.4.18"
+  dependencies:
+    browserslist: "npm:^4.23.0"
+    caniuse-lite: "npm:^1.0.30001591"
+    fraction.js: "npm:^4.3.7"
+    normalize-range: "npm:^0.1.2"
+    picocolors: "npm:^1.0.0"
+    postcss-value-parser: "npm:^4.2.0"
+  peerDependencies:
+    postcss: ^8.1.0
+  bin:
+    autoprefixer: bin/autoprefixer
+  checksum: 10c0/b6e1c1ba2fc6c09360cdcd75b00ce809c5dbe1ad4c30f0186764609a982aa5563d45965cb9e6a9d195c639a9fb1dcac2594484fc41624050195f626e9add666e
+  languageName: node
+  linkType: hard
+
 "autoprefixer@npm:^10.0.1":
   version: 10.4.17
   resolution: "autoprefixer@npm:10.4.17"
@@ -3336,7 +3394,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"browserslist@npm:^4.22.2":
+"browserslist@npm:^4.22.2, browserslist@npm:^4.23.0":
   version: 4.23.0
   resolution: "browserslist@npm:4.23.0"
   dependencies:
@@ -3548,6 +3606,13 @@ __metadata:
   version: 1.0.30001589
   resolution: "caniuse-lite@npm:1.0.30001589"
   checksum: 10c0/20debfb949413f603011bc7dacaf050010778bc4f8632c86fafd1bd0c43180c95ae7c31f6c82348f6309e5e221934e327c3607a216e3f09640284acf78cd6d4d
+  languageName: node
+  linkType: hard
+
+"caniuse-lite@npm:^1.0.30001591":
+  version: 1.0.30001596
+  resolution: "caniuse-lite@npm:1.0.30001596"
+  checksum: 10c0/60589001c7d9bb89e2bf08f1aeadd09c867e41661b1fd2c1d562ca8e67a9f645f7dd9572aeca7ffdfff37a4e17ccf6a4cfdd29dde5a7454f5f08f5f372345d13
   languageName: node
   linkType: hard
 
@@ -5582,6 +5647,10 @@ __metadata:
     "@testing-library/react": "npm:^14.2.1"
     "@testing-library/user-event": "npm:^14.5.2"
     "@trivago/prettier-plugin-sort-imports": "npm:^4.3.0"
+    "@types/autoprefixer": "npm:~10.2.0"
+    "@types/eslint": "npm:~8.56.5"
+    "@types/eslint-config-prettier": "npm:~6.11.3"
+    "@types/lint-staged": "npm:~13.3.0"
     "@types/node": "npm:^20"
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
